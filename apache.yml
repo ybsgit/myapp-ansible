@@ -6,6 +6,7 @@
       apt:
         name: "httpd"
         state: "present"
+        update_cache: yes
     - name: Start Apache server
       service:
         name: httpd
